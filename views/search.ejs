@@ -1,0 +1,16 @@
+<%- include("partials/header") %> 
+
+<% filename.forEach(element => { %>
+    <div style="border-radius: 25px;
+    background: #2a406b;
+    padding: 20px;
+    width: 50%;
+    margin: 5px;">
+    <a href="/<%=element%>" style="color: aliceblue;"> <%= element %> </a>
+    </div>
+    
+    
+<%});%>
+
+
+<%- include("partials/footer") %> 

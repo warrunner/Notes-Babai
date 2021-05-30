@@ -1,0 +1,69 @@
+[
+    {
+        "branch" : "cse",
+        "cse" : [
+            "CSE321",
+            "CSE322",
+            "CSE323",
+            "CSE324",
+            "CSE325",
+            "CSE326"
+        ]
+    },
+    {
+        "branch" : "ECE",
+        "subjects" : [
+            "ECE321",
+            "ECE322",
+            "ECE323",
+            "ECE324",
+            "ECE325",
+            "ECE326"
+        ]
+    },
+    {
+        "branch" : "EE",
+        "subjects" : [
+            "EE321",
+            "EE322",
+            "EE323",
+            "EE324",
+            "EE325",
+            "EE326"
+        ]
+    },
+    {
+        "branch" : "ME",
+        "subjects" : [
+            "ME321",
+            "ME322",
+            "ME323",
+            "ME324",
+            "ME325",
+            "ME326"
+        ]
+    },
+    {
+        "branch" : "CE",
+        "subjects" : [
+            "CE321",
+            "CE322",
+            "CE323",
+            "CE324",
+            "CE325",
+            "CE326"
+        ]
+    },
+    {
+        "branch" : "MSME",
+        "subjects" : [
+            "MSME321",
+            "MSME322",
+            "MSME323",
+            "MSME324",
+            "MSME325",
+            "MSME326"
+        ]
+    }
+]
+

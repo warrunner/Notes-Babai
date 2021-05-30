@@ -1,0 +1,132 @@
+<%- include("partials/header") %> 
+
+<body>
+    <h1 style="text-align: center;">Find Your Notes Here</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-10 m-auto">
+    <div class="box searchindex ">
+        <h1 style="text-align: center;">EXAM READY NOTES HERE!</h1>
+    <form action="/search" method="post" class="item">
+        <label for="">Branch</label>
+        <br>
+        <select name="departmentselector" id="s1" onchange="change()">
+            <option value="">Select your Branch</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EE">EE</option>
+        </select>
+        <br>
+        <label for="">Subjects</label>
+        <br>
+        <select name="subjectselector" id="s2">
+
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- <button onclick="change()">Try it</button> -->
+</body>
+<!-- <script src="./dropdown.js"></script> -->
+<script>
+    
+    function change(){
+    const data = [
+    {
+        "branch" : "CSE",
+        "subjects" : [
+            "CSE321",
+            "CSE322",
+            "CSE323",
+            "CSE324",
+            "CSE325",
+            "CSE326"
+        ]
+    },
+    {
+        "branch" : "ECE",
+        "subjects" : [
+            "ECE321",
+            "ECE322",
+            "ECE323",
+            "ECE324",
+            "ECE325",
+            "ECE326"
+        ]
+    },
+    {
+        "branch" : "EE",
+        "subjects" : [
+            "EE321",
+            "EE322",
+            "EE323",
+            "EE324",
+            "EE325",
+            "EE326"
+        ]
+    },
+    {
+        "branch" : "ME",
+        "subjects" : [
+            "ME321",
+            "ME322",
+            "ME323",
+            "ME324",
+            "ME325",
+            "ME326"
+        ]
+    },
+    {
+        "branch" : "CE",
+        "subjects" : [
+            "CE321",
+            "CE322",
+            "CE323",
+            "CE324",
+            "CE325",
+            "CE326"
+        ]
+    },
+    {
+        "branch" : "MSME",
+        "subjects" : [
+            "MSME321",
+            "MSME322",
+            "MSME323",
+            "MSME324",
+            "MSME325",
+            "MSME326"
+        ]
+    }
+]
+    // console.log(data);
+    var s1 =  document.getElementById("s1")
+    var s2 = document.getElementById("s2")
+    console.log(String(data[0].branch));
+    s2.innerHTML=""
+    for(var j in data )
+    {
+        if(String(data[j].branch) === s1.value )
+        {
+            for(var i in data[j].subjects)
+            {
+                var option = document.createElement("option")
+                option.value=String(data[j].subjects[i]);
+                option.text=String(data[j].subjects[i])
+                s2.appendChild(option)
+            }
+        }
+    } 
+
+
+   }
+    
+</script>
+
+<%- include("partials/footer") %> 
