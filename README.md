@@ -15,15 +15,15 @@ All the data flowing through and the accounts are continuously monitored.
 # Made with ❤ by MBians
 We love to build.
 # Technologies Used
- Javascript
- EJS
- Node.js
- Express.js
- Mongoose
- GridFS
- Multer-GridFs
- Passport.js
- Body-Parser
- MongoDB Atlas
+ Javascript,
+ EJS,
+ Node.js,
+ Express.js,
+ Mongoose,
+ GridFS,
+ Multer-GridFs,
+ Passport.js,
+ Body-Parser,
+ MongoDB Atlas.
  
  
