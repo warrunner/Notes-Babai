@@ -29,14 +29,14 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-const mongoURI = "mongodb+srv://admin-varun:Test123@cluster0.ao4g3.mongodb.net/node-file-upl";
+const mongoURI = "<mongodbserveraddress>";
 
 // connection
 const conn = mongoose.createConnection(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
-mongoose.connect("mongodb+srv://admin-varun:Test123@cluster0.ao4g3.mongodb.net/node-file-upl", {useNewUrlParser:true, useUnifiedTopology:true});
+mongoose.connect("<mongodbserveraddress>", {useNewUrlParser:true, useUnifiedTopology:true});
 mongoose.set("useCreateIndex", true)
 
 const notesSchema = new mongoose.Schema({
